@@ -172,6 +172,12 @@ function loadContent(floor, entity_id) {
             }
 
         }
+        
+        if (newEntity[0] === undefined) {
+            console.log("Entity", floorEntities[i][0], "not found in Home Assistant. Check your entities section in ./js/setup.js file");
+            continue;
+                
+        }
 
         var newIcon = document.createElement("div");
         newIcon.className = "icon-div";

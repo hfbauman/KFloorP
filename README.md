@@ -4,8 +4,8 @@
 
 It focus on depending on anything else besides Home Assistant to fetch the data, and to be easy to deploy and maintain.
 
-<img src="./kindle.jpg" width= "30%" height="30%"/><img src="./kindle2.jpg" width= "30%" height="30%"/>
-<img src="./kindle3.jpg" width= "30%" height="30%"/>
+<img src="./docs/kindle.jpg" width= "30%" height="30%"/><img src="./docs/kindle2.jpg" width= "30%" height="30%"/>
+<img src="./docs/kindle3.jpg" width= "30%" height="30%"/>
 
 
 ## Features
@@ -47,9 +47,9 @@ It focus on depending on anything else besides Home Assistant to fetch the data,
 The structure should be like this:
 
 ```
-   ./kfloorp/scripts/main.js
+   ./kfloorp/js/main.js
+   ./kfloorp/js/setup.js
    ./kfloorp/css/common-style.css
-   ./kfloorp/data.js
    ./kfloorp/index.html
    ./kfloorp/2ndfloor.html
    ./kfloorp/switches.html
@@ -70,7 +70,7 @@ http:
 
 After adding the lines above to your confituration, remember to **restart your Home Assistant Core**.
 
-3. Open the **data.js** file on your webserver using any text editor and follow the instructions inside to add your Home Assistant IP/URL, your LongLived Token, your floorplan images and your devices.
+3. Open the **/js/setup.js** file on your webserver using any text editor and follow the instructions inside to add your Home Assistant IP/URL, your LongLived Token, your floorplan images and your devices.
 
 4. Go to the Experimental Web Browser on your Kindle or any PC Browser and open your webserver URL to check it out. E.g.: http://x.x.x.x:8080/kfloorp/index.html
 
