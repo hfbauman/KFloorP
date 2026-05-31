@@ -1,11 +1,5 @@
 // CHANGE the Variables below according to your needs:
 
-//Your homeassistant address. Ex: var hassaddress = "http://192.168.1.10:8123"
-var hassaddress = ""; 
-
-//Your homeassistant long lived token
-var hasspass = ""; 
-
 //if your kindle does not display your correct time, change the timeoffset from 0 to the difference between your needs (either negatives or positives values are accepted)
 var timeoffset = 0;
 
