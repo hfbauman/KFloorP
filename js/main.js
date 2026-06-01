@@ -589,6 +589,9 @@ function setMenu() {
         //divMenu2ndFloor.style = "visibility: hidden !important; display: none !important;";
     }
 
+    var divMenu1stFloor = document.getElementById('menu1');
+    divMenu1stFloor.parentElement.removeChild(divMenu1stFloor);
+
 }
 
 function startup(floor) {
