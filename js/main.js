@@ -156,6 +156,26 @@ function getEntityState(apiData, entityId) {
     return null;
 }
 
+function updateHeaderBattery(apiData) {
+    var batteryEntity = getEntityState(apiData, "sensor.harrison_s_kindle_battery");
+    var batteryHeader = document.getElementById("kindle-battery");
+
+    if (batteryHeader == null || batteryEntity == null) {
+        batteryEntity = fetchAPIAndPopulateVariable("sensor.harrison_s_kindle_battery");
+
+        if (batteryHeader == null || batteryEntity == null) {
+            return;
+        }
+    }
+
+    var batteryValue = batteryEntity["state"];
+    var batteryUnit = batteryEntity["attributes"] && batteryEntity["attributes"]["unit_of_measurement"]
+        ? batteryEntity["attributes"]["unit_of_measurement"]
+        : "";
+
+    batteryHeader.innerHTML = batteryValue + batteryUnit;
+}
+
 
 function loadContent(floor, entity_id) {
     updateClock();
@@ -169,6 +189,8 @@ function loadContent(floor, entity_id) {
     } else {
         apiData = fetchAPIAndPopulateVariable();
     }
+
+    updateHeaderBattery(apiData);
 
     var floorEntities = devices1stFloor;
 
@@ -611,6 +633,8 @@ function loadContentSwitches(entity_id) {
     } else {
         apiData = fetchAPIAndPopulateVariable();
     }
+
+    updateHeaderBattery(apiData);
 
     if (Object.prototype.toString.call(apiData) === "[object Array]") {
 
