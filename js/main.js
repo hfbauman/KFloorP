@@ -468,56 +468,13 @@ function loadContent(floor, entity_id) {
                 break;
             case "cover":
                 var clickableIcon = document.createElement("a");
-                // prefer entity_picture, then entity attribute icon, then fallback garage icons
-                var attr = newEntity[0]["attributes"] || {};
                 var state = newEntity[0]["state"];
-                var isOpen = (state === "open" || state === "opening");
-                var iconHtml = "";
-                if (attr.entity_picture) {
-                    // fetch the picture with Authorization (entity_picture is often protected)
-                    var imgElement = document.createElement('img');
-                    imgElement.width = 48; imgElement.height = 48;
-                    imgElement.alt = (attr.friendly_name || 'cover');
-                    // resolve relative paths
-                    var picUrl = attr.entity_picture;
-                    if (picUrl && picUrl.charAt(0) === '/') {
-                        picUrl = hassaddress + picUrl;
-                    }
-                    try {
-                        var picReq = new XMLHttpRequest();
-                        picReq.open('GET', picUrl, true);
-                        picReq.responseType = 'blob';
-                        picReq.setRequestHeader('Authorization', 'Bearer ' + hasspass);
-                        picReq.onload = function () {
-                            if (picReq.status === 200) {
-                                var blobUrl = URL.createObjectURL(picReq.response);
-                                imgElement.src = blobUrl;
-                            }
-                        };
-                        picReq.send(null);
-                    } catch (e) {
-                        // fallback to direct src (may fail if auth required)
-                        imgElement.src = attr.entity_picture;
-                    }
-                    // append the image element directly
-                    clickableIcon.appendChild(imgElement);
-                    iconHtml = null;
-                } else if (attr.icon) {
-                    // icon is typically 'mdi:garage' — if it mentions garage use our garage SVGs, otherwise fallback to a simple svg
-                    var ic = attr.icon.toString();
-                    if (ic.indexOf('mdi:') === 0 && ic.indexOf('garage') !== -1) {
-                        iconHtml = isOpen ? garageOpenIcon : garageClosedIcon;
-                    } else {
-                        // generic circle icon using currentColor
-                        iconHtml = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'><circle cx='12' cy='12' r='9' fill='currentColor'/></svg>";
-                    }
+                if (state === "open" || state === "opening") {
+                    clickableIcon.innerHTML = garageOpenIcon;
                 } else {
-                    iconHtml = isOpen ? garageOpenIcon : garageClosedIcon;
+                    clickableIcon.innerHTML = garageClosedIcon;
                 }
                 clickableIcon.href = "javascript:homefunc('" + newEntity[0]["entity_id"] + "', 'toggle', " + floor + ")";
-                if (iconHtml !== null && iconHtml !== "") {
-                    clickableIcon.innerHTML = iconHtml;
-                }
                 newIcon.appendChild(clickableIcon);
                 break;
             case "weather":
