@@ -52,7 +52,11 @@ var devices1stFloor = [
 
     //OUTSIDE
     ["sensor.outside_temperature_rounded",150,430,"temperature"],
-    ["sensor.outside_humidity_rounded",148,510,"humidity"]
+    ["sensor.outside_humidity_rounded",148,510,"humidity"],
+
+    //BASEMENT
+    ["sensor.basement_temperature_rounded", 320, 40, "temperature"],
+    ["sensor.basement_humidity_rounded", 318, 120, "humidity"]
 ];
 
 // devices for the second floor
