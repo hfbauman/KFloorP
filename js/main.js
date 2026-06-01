@@ -205,6 +205,7 @@ function loadContent(floor, entity_id) {
         newIcon.id = newEntity[0]["entity_id"];
         newIcon.style.top = floorEntities[i][1] + "px";
         newIcon.style.left = floorEntities[i][2] + "px";
+        newIcon.style.marginLeft = -24 + "px";
 
         switch (newEntity[0]["entity_id"].split(".")[0]) {
             case "light":
@@ -379,6 +380,7 @@ function loadContent(floor, entity_id) {
                     newIcon.className = "icon-div commute-card";
                     newIcon.style.width = "160px";
                     newIcon.style.height = "96px";
+                    newIcon.style.marginLeft = "-80px";
                     newIcon.innerHTML = "<div class='commute-item'>" + carIcon + "<p class='commute_value'>" + commuteHomeState + "</p></div>" +
                         "<div class='commute-item'>" + homeIcon + "<p class='commute_value'>" + commuteEtaState + "</p></div>";
                 }
