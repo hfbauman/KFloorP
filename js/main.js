@@ -515,7 +515,9 @@ function loadContent(floor, entity_id) {
                     iconHtml = isOpen ? garageOpenIcon : garageClosedIcon;
                 }
                 clickableIcon.href = "javascript:homefunc('" + newEntity[0]["entity_id"] + "', 'toggle', " + floor + ")";
-                clickableIcon.innerHTML = iconHtml;
+                if (iconHtml !== null && iconHtml !== "") {
+                    clickableIcon.innerHTML = iconHtml;
+                }
                 newIcon.appendChild(clickableIcon);
                 break;
             case "weather":
