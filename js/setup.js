@@ -47,7 +47,11 @@ var devices1stFloor = [
     //LIVING ROOM
     ["sensor.living_room_temperature_rounded",150,235,"temperature"],
     ["sensor.living_room_humidity_rounded",148,315,"humidity"],
-    ["light.living_room_lights", 220, 275]
+    ["light.living_room_lights", 220, 275],
+
+    //OUTSIDE
+    ["sensor.outside_temperature_rounded",150,430,"temperature"],
+    ["sensor.outside_humidity_rounded",148,510,"humidity"]
 ];
 
 // devices for the second floor
