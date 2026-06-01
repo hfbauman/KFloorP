@@ -11,7 +11,7 @@
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
-   sodipodi:docname="drawing.svg"
+   sodipodi:docname="table.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="3.2337963"
-     inkscape:cx="246.15032"
+     inkscape:cx="245.9957"
      inkscape:cy="172.398"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
@@ -37,6 +37,24 @@
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
+    <rect
+       x="191.5"
+       y="170.69721"
+       width="189.99999"
+       height="164.3028"
+       id="rect8" />
+    <rect
+       x="1.8790213"
+       y="167.68883"
+       width="189.62098"
+       height="167.31117"
+       id="rect3" />
+    <rect
+       x="381.49999"
+       y="0"
+       width="186.99866"
+       height="167.68883"
+       id="rect1" />
     <rect
        x="191.5"
        y="-9.8771656e-06"
@@ -88,7 +106,7 @@
        y="0"><tspan
          x="46.923871"
          y="33.439273"
-         id="tspan1">Office</tspan></text>
+         id="tspan5">Office</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -98,6 +116,36 @@
        y="0"><tspan
          x="231.56157"
          y="31.560367"
-         id="tspan2">Living</tspan></text>
+         id="tspan6">Living</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1"
+       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);fill:#000000;stroke:#000000;stroke-width:3"
+       x="93.499329"
+       y="0"><tspan
+         x="409.29205"
+         y="31.560367"
+         id="tspan7">Outside</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text3"
+       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);fill:#000000;stroke:#000000;stroke-width:3"
+       x="94.810493"
+       y="0"><tspan
+         x="16.727282"
+         y="199.24982"
+         id="tspan9">Basement</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text4"
+       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect8);fill:#000000;stroke:#000000;stroke-width:3"
+       x="94.999992"
+       y="0"><tspan
+         x="226.89068"
+         y="202.25763"
+         id="tspan10">Garage</tspan></text>
   </g>
 </svg>
