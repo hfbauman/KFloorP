@@ -43,6 +43,7 @@ var devices1stFloor = [
     //OFFICE
     ["sensor.office_temperature_rounded", 150, 40, "temperature"],
     ["sensor.office_humidity_rounded", 148, 120, "humidity"],
+    ["light.crystal_cube",220,80],
 
     //LIVING ROOM
     ["sensor.living_room_temperature_rounded",150,235,"temperature"],
