@@ -29,10 +29,10 @@
      inkscape:zoom="3.2337963"
      inkscape:cx="245.9957"
      inkscape:cy="172.398"
-     inkscape:window-width="3840"
-     inkscape:window-height="2054"
-     inkscape:window-x="2389"
-     inkscape:window-y="-11"
+     inkscape:window-width="2400"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="1157"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -106,7 +106,7 @@
        y="0"><tspan
          x="46.923871"
          y="33.439273"
-         id="tspan5">Office</tspan></text>
+         id="tspan1">Office</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -116,7 +116,7 @@
        y="0"><tspan
          x="231.56157"
          y="31.560367"
-         id="tspan6">Living</tspan></text>
+         id="tspan2">Living</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -126,7 +126,7 @@
        y="0"><tspan
          x="409.29205"
          y="31.560367"
-         id="tspan7">Outside</tspan></text>
+         id="tspan3">Outside</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -136,16 +136,6 @@
        y="0"><tspan
          x="16.727282"
          y="199.24982"
-         id="tspan9">Basement</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="scale(0.26458333)"
-       id="text4"
-       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect8);fill:#000000;stroke:#000000;stroke-width:3"
-       x="94.999992"
-       y="0"><tspan
-         x="226.89068"
-         y="202.25763"
-         id="tspan10">Garage</tspan></text>
+         id="tspan4">Basement</tspan></text>
   </g>
 </svg>
