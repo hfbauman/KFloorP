@@ -173,11 +173,16 @@ h2 {
     width: 50px;
     vertical-align: top;
     text-align: center;
+    margin: 0 4px 0 0;
 }
 
 .commute-item svg {
     width: 32px;
     height: 32px;
+}
+
+.commute-item:last-child {
+    margin-right: 0;
 }
 
 .commute_value {
