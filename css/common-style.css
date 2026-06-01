@@ -23,7 +23,7 @@ h2 {
 #wrapper {
     /* The kindle removes the scroll bars if the width of the page is 607 px or more... */
     width: 607px;
-    height: 705px;
+    height: 450px;
     background-color: white;
     overflow: hidden;
     /* TODO: needed? */
