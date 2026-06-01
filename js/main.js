@@ -468,20 +468,27 @@ function loadContent(floor, entity_id) {
                 break;
             case "cover":
                 var clickableIcon = document.createElement("a");
-                switch (newEntity[0]["state"]) {
-                    case "open":
-                    case "opening":
-                        clickableIcon.href = "javascript:homefunc('" + newEntity[0]["entity_id"] + "', 'toggle', " + floor + ")";
-                        clickableIcon.innerHTML = garageOpenIcon;
-                        break;
-                    case "closed":
-                    case "closing":
-                    case "unknown":
-                    default:
-                        clickableIcon.href = "javascript:homefunc('" + newEntity[0]["entity_id"] + "', 'toggle', " + floor + ")";
-                        clickableIcon.innerHTML = garageClosedIcon;
-                        break;
+                // prefer entity_picture, then entity attribute icon, then fallback garage icons
+                var attr = newEntity[0]["attributes"] || {};
+                var state = newEntity[0]["state"];
+                var isOpen = (state === "open" || state === "opening");
+                var iconHtml = "";
+                if (attr.entity_picture) {
+                    iconHtml = "<img src='" + attr.entity_picture + "' width='48' height='48' alt='" + (attr.friendly_name || "cover") + "'/>";
+                } else if (attr.icon) {
+                    // icon is typically 'mdi:garage' — if it mentions garage use our garage SVGs, otherwise fallback to a simple svg
+                    var ic = attr.icon.toString();
+                    if (ic.indexOf('mdi:') === 0 && ic.indexOf('garage') !== -1) {
+                        iconHtml = isOpen ? garageOpenIcon : garageClosedIcon;
+                    } else {
+                        // generic circle icon using currentColor
+                        iconHtml = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'><circle cx='12' cy='12' r='9' fill='currentColor'/></svg>";
+                    }
+                } else {
+                    iconHtml = isOpen ? garageOpenIcon : garageClosedIcon;
                 }
+                clickableIcon.href = "javascript:homefunc('" + newEntity[0]["entity_id"] + "', 'toggle', " + floor + ")";
+                clickableIcon.innerHTML = iconHtml;
                 newIcon.appendChild(clickableIcon);
                 break;
             case "weather":
