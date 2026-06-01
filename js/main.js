@@ -34,6 +34,8 @@ var googleAssistantIconGrey = "<svg xmlns='http://www.w3.org/2000/svg' width='48
 var temperatureIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><path fill='black' d='M15 13V5a3 3 0 0 0-6 0v8a5 5 0 1 0 6 0m-3-9a1 1 0 0 1 1 1v3h-2V5a1 1 0 0 1 1-1Z'/></svg>";
 var batteryIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><path fill='black' d='M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6v-3m0-4.5H9v3h6v-3Z'/></svg>";
 var humidityIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><path fill='black' d='M21.86 12.5A4.313 4.313 0 0 0 19 11c0-1.95-.68-3.6-2.04-4.96C15.6 4.68 13.95 4 12 4c-1.58 0-3 .47-4.25 1.43s-2.08 2.19-2.5 3.72c-1.25.28-2.29.93-3.08 1.95S1 13.28 1 14.58c0 1.51.54 2.8 1.61 3.85C3.69 19.5 5 20 6.5 20h12c1.25 0 2.31-.44 3.19-1.31c.87-.88 1.31-1.94 1.31-3.19c0-1.15-.38-2.15-1.14-3m-1.59 4.77c-.48.49-1.07.73-1.77.73h-12c-.97 0-1.79-.34-2.47-1C3.34 16.29 3 15.47 3 14.5s.34-1.79 1.03-2.47C4.71 11.34 5.53 11 6.5 11H7c0-1.38.5-2.56 1.46-3.54C9.44 6.5 10.62 6 12 6s2.56.5 3.54 1.46C16.5 8.44 17 9.62 17 11v2h1.5c.7 0 1.29.24 1.77.73S21 14.8 21 15.5s-.24 1.29-.73 1.77M8.03 10.45c0-.78.64-1.42 1.42-1.42c.78 0 1.42.64 1.42 1.42c0 .78-.64 1.42-1.42 1.42c-.78 0-1.42-.64-1.42-1.42m7.94 5.1c0 .78-.64 1.42-1.42 1.42c-.78 0-1.42-.64-1.42-1.42c0-.78.64-1.42 1.42-1.42c.78 0 1.42.64 1.42 1.42M14.8 9l1.2 1.2L9.2 17L8 15.8L14.8 9Z'/></svg>";
+var carIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><path fill='black' d='M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11a2 2 0 0 1 1 1.73V17a1 1 0 0 1-1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H7v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1a1 1 0 0 1-1-1v-4.27A2 2 0 0 1 5 11m1.3 0h11.4l-1.08-3.24A1 1 0 0 0 15.68 7H8.32a1 1 0 0 0-.94.76L6.3 11M6 14a1 1 0 1 0 0 2a1 1 0 0 0 0-2m12 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2Z'/></svg>";
+var homeIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><path fill='black' d='M12 3.2L3 10.2V21a1 1 0 0 0 1 1h5v-6h6v6h5a1 1 0 0 0 1-1V10.2l-9-7m0 2.6l7 5.43V20h-3v-6H8v6H5v-8.77l7-5.43Z'/></svg>";
 var floorplan1 = "<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 32 32'><path fill='currentColor' d='M28 2H4c-1.1 0-2 .9-2 2v24c0 1.1.9 2 2 2h15v-2c0-2.8 2.2-5 5-5v-2c-3.9 0-7 3.1-7 7h-3v-4h-2v4H4V4h8v14h2v-5h4v-2h-4V4h14v7h-4v2h4v15h-4v2h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z'/></svg>";
 var floorplan2 = "<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 15 15'><path fill='currentColor' fill-rule='evenodd' d='M0 0h4.651l3.126 2.084l-.554.832L4.349 1H1v13h5V8H4V7h5v1H7v6h7V8h-2V7h2V1h-4V0h5v15H0V0Z' clip-rule='evenodd'/></svg>";
 var switchesIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'><path fill='white' d='M3 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1m7 0h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1m7 0h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1M4 18h2v-5H4v5m7-7h2V6h-2v5m7 7h2v-5h-2v5Z'/></svg>";
@@ -135,6 +137,23 @@ function populateForecast(data, entity_id) {
 
         forecastContainer.appendChild(forecastItem);
     }
+}
+
+function getEntityState(apiData, entityId) {
+    if (Object.prototype.toString.call(apiData) === "[object Array]") {
+        for (var i = 0; i < apiData.length; i++) {
+            if (apiData[i]["entity_id"] === entityId) {
+                return apiData[i];
+            }
+        }
+        return null;
+    }
+
+    if (apiData != null && apiData["entity_id"] === entityId) {
+        return apiData;
+    }
+
+    return null;
 }
 
 
@@ -340,6 +359,30 @@ function loadContent(floor, entity_id) {
                 newIcon.appendChild(sensorValue);
 
                 break;
+            case "input_boolean":
+                if (newEntity[0]["entity_id"] === "input_boolean.hannah_commuting") {
+                    var commuteData = apiData;
+                    if (Object.prototype.toString.call(apiData) !== "[object Array]") {
+                        commuteData = fetchAPIAndPopulateVariable();
+                    }
+
+                    if (newEntity[0]["state"] !== "on") {
+                        newIcon.style.display = "none";
+                        break;
+                    }
+
+                    var commuteHome = getEntityState(commuteData, "sensor.hannah_commute_home");
+                    var commuteEta = getEntityState(commuteData, "sensor.hannah_commute_eta");
+                    var commuteHomeState = commuteHome == null ? "-" : commuteHome["state"];
+                    var commuteEtaState = commuteEta == null ? "-" : commuteEta["state"];
+
+                    newIcon.className = "icon-div commute-card";
+                    newIcon.style.width = "108px";
+                    newIcon.style.height = "96px";
+                    newIcon.innerHTML = "<div class='commute-item'>" + carIcon + "<p class='commute_value'>" + commuteHomeState + "</p></div>" +
+                        "<div class='commute-item'>" + homeIcon + "<p class='commute_value'>" + commuteEtaState + "</p></div>";
+                }
+                break;
             case "media_player":
 
                 var clickableIcon = document.createElement("a");
@@ -503,6 +546,9 @@ function loadContent(floor, entity_id) {
         } else {
             exists = 1;
             existingIcon.innerHTML = newIcon.innerHTML;
+            existingIcon.style.display = newIcon.style.display;
+            existingIcon.style.width = newIcon.style.width;
+            existingIcon.style.height = newIcon.style.height;
         }
 
         if (newIcon.className == "forecast-container") {

@@ -162,6 +162,30 @@ h2 {
     margin: 0;
 }
 
+.commute-card {
+    width: 108px;
+    height: 96px;
+    line-height: 1;
+}
+
+.commute-item {
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.commute-item svg {
+    width: 32px;
+    height: 32px;
+}
+
+.commute_value {
+    font-size: 11px;
+    color: black;
+    margin: 0;
+}
+
 .floorplanImg {
     width: 100%
 }

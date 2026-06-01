@@ -24,6 +24,7 @@ var floorplan2ndFloor = "./images/floorplan.png"; // your floorplan image path f
 // SENSOR: battery, temperature, humidity
 // MEDIA_PLAYER: tv, alexa, googleassistant
 // WEATHER: 5dayforecast or omitted/none
+// INPUT_BOOLEAN: can be used for special conditional displays
 //
 // If a type is not informed, then the standard Icon for the category will be used
 //
@@ -53,6 +54,7 @@ var devices1stFloor = [
     //OUTSIDE
     ["sensor.outside_temperature_rounded",150,430,"temperature"],
     ["sensor.outside_humidity_rounded",148,510,"humidity"],
+    ["input_boolean.hannah_commuting", 430, 20],
     //GARAGE
     ["cover.ratgdo32_fc5c64_door", 220, 470],
 
