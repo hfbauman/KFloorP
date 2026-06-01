@@ -291,7 +291,12 @@ function loadContent(floor, entity_id) {
                                     newIcon.innerHTML = openDoorIcon;
                                     break;
                                 case "garage":
-                                    newIcon.innerHTML = garageOpenIcon;
+                                    var clickableIcon = document.createElement("a");
+                                    var baseName = newEntity[0]["entity_id"].split(".")[1];
+                                    var controlEntity = "cover." + baseName;
+                                    clickableIcon.href = "javascript:homefunc('" + controlEntity + "', 'toggle', " + floor + ")";
+                                    clickableIcon.innerHTML = garageOpenIcon;
+                                    newIcon.appendChild(clickableIcon);
                                     break;
                                 default:
                                     newIcon.innerHTML = binarySensorDefaultOn;
@@ -310,7 +315,12 @@ function loadContent(floor, entity_id) {
                                     newIcon.innerHTML = closedDoorIcon;
                                     break;
                                 case "garage":
-                                    newIcon.innerHTML = garageClosedIcon;
+                                    var clickableIcon = document.createElement("a");
+                                    var baseName = newEntity[0]["entity_id"].split(".")[1];
+                                    var controlEntity = "cover." + baseName;
+                                    clickableIcon.href = "javascript:homefunc('" + controlEntity + "', 'toggle', " + floor + ")";
+                                    clickableIcon.innerHTML = garageClosedIcon;
+                                    newIcon.appendChild(clickableIcon);
                                     break;
                                 default:
                                     newIcon.innerHTML = binarySensorDefaultOff;
