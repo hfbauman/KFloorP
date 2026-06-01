@@ -53,13 +53,12 @@ var devices1stFloor = [
     //OUTSIDE
     ["sensor.outside_temperature_rounded",150,430,"temperature"],
     ["sensor.outside_humidity_rounded",148,510,"humidity"],
+    //GARAGE
+    ["cover.ratgdo32_fc5c64_door", 220, 470],
 
     //BASEMENT
     ["sensor.basement_temperature_rounded", 320, 40, "temperature"],
-    ["sensor.basement_humidity_rounded", 318, 120, "humidity"],
-
-    //GARAGE
-    ["cover.ratgdo32_fc5c64_door", 320, 275]
+    ["sensor.basement_humidity_rounded", 318, 120, "humidity"]
 ];
 
 // devices for the second floor
