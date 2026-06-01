@@ -42,27 +42,28 @@ var floorplan2ndFloor = "./images/floorplan.png"; // your floorplan image path f
 // devices for 1st floor
 var devices1stFloor = [
     //OFFICE
-    ["sensor.office_temperature_rounded", 150, 40, "temperature"],
-    ["sensor.office_humidity_rounded", 148, 120, "humidity"],
-    ["light.crystal_cube",220,80],
+    //Left bound at 17, right bound at 206
+    ["sensor.office_temperature_rounded", 150, 64, "temperature"],
+    ["sensor.office_humidity_rounded", 148, 159, "humidity"],
+    ["light.crystal_cube",220,111],
 
     //LIVING ROOM
-    ["sensor.living_room_temperature_rounded",150,235,"temperature"],
-    ["sensor.living_room_humidity_rounded",148,315,"humidity"],
-    ["light.living_room_lights", 220, 275],
+    ["sensor.living_room_temperature_rounded",150,253,"temperature"],
+    ["sensor.living_room_humidity_rounded",148,348,"humidity"],
+    ["light.living_room_lights", 220, 300],
 
     //OUTSIDE
-    ["sensor.outside_temperature_rounded",150,430,"temperature"],
-    ["sensor.outside_humidity_rounded",148,510,"humidity"],
+    ["sensor.outside_temperature_rounded",150,442,"temperature"],
+    ["sensor.outside_humidity_rounded",148,537,"humidity"],
     //GARAGE
-    ["cover.ratgdo32_fc5c64_door", 220, 470],
+    ["cover.ratgdo32_fc5c64_door", 220, 489],
 
     //BASEMENT
-    ["sensor.basement_temperature_rounded", 320, 40, "temperature"],
-    ["sensor.basement_humidity_rounded", 318, 120, "humidity"],
+    ["sensor.basement_temperature_rounded", 320, 64, "temperature"],
+    ["sensor.basement_humidity_rounded", 318, 159, "humidity"],
 
     //COMMUTING
-    ["input_boolean.hannah_commuting", 320,235],
+    ["input_boolean.hannah_commuting", 320,300],
 ];
 
 // devices for the second floor
