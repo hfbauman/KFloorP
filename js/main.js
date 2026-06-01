@@ -474,7 +474,34 @@ function loadContent(floor, entity_id) {
                 var isOpen = (state === "open" || state === "opening");
                 var iconHtml = "";
                 if (attr.entity_picture) {
-                    iconHtml = "<img src='" + attr.entity_picture + "' width='48' height='48' alt='" + (attr.friendly_name || "cover") + "'/>";
+                    // fetch the picture with Authorization (entity_picture is often protected)
+                    var imgElement = document.createElement('img');
+                    imgElement.width = 48; imgElement.height = 48;
+                    imgElement.alt = (attr.friendly_name || 'cover');
+                    // resolve relative paths
+                    var picUrl = attr.entity_picture;
+                    if (picUrl && picUrl.charAt(0) === '/') {
+                        picUrl = hassaddress + picUrl;
+                    }
+                    try {
+                        var picReq = new XMLHttpRequest();
+                        picReq.open('GET', picUrl, true);
+                        picReq.responseType = 'blob';
+                        picReq.setRequestHeader('Authorization', 'Bearer ' + hasspass);
+                        picReq.onload = function () {
+                            if (picReq.status === 200) {
+                                var blobUrl = URL.createObjectURL(picReq.response);
+                                imgElement.src = blobUrl;
+                            }
+                        };
+                        picReq.send(null);
+                    } catch (e) {
+                        // fallback to direct src (may fail if auth required)
+                        imgElement.src = attr.entity_picture;
+                    }
+                    // append the image element directly
+                    clickableIcon.appendChild(imgElement);
+                    iconHtml = null;
                 } else if (attr.icon) {
                     // icon is typically 'mdi:garage' — if it mentions garage use our garage SVGs, otherwise fallback to a simple svg
                     var ic = attr.icon.toString();
