@@ -377,7 +377,7 @@ function loadContent(floor, entity_id) {
                     var commuteEtaState = commuteEta == null ? "-" : commuteEta["state"];
 
                     newIcon.className = "icon-div commute-card";
-                    newIcon.style.width = "108px";
+                    newIcon.style.width = "160px";
                     newIcon.style.height = "96px";
                     newIcon.innerHTML = "<div class='commute-item'>" + carIcon + "<p class='commute_value'>" + commuteHomeState + "</p></div>" +
                         "<div class='commute-item'>" + homeIcon + "<p class='commute_value'>" + commuteEtaState + "</p></div>";
