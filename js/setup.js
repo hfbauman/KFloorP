@@ -42,7 +42,7 @@ var floorplan2ndFloor = "./images/floorplan.png"; // your floorplan image path f
 var devices1stFloor = [
     //OFFICE
     ["sensor.office_temperature_rounded", 150, 40, "temperature"],
-    ["sensor.office_humidity_rounded", 150, 120, "humidity"],
+    ["sensor.office_humidity_rounded", 148, 120, "humidity"],
 
     //LIVING ROOM
     ["light.living_room_lights", 220, 275]
