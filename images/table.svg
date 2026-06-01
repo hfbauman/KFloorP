@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="3.2337963"
-     inkscape:cx="245.9957"
-     inkscape:cy="172.398"
+     inkscape:zoom="2.2866393"
+     inkscape:cx="216.69356"
+     inkscape:cy="133.16486"
      inkscape:window-width="2400"
      inkscape:window-height="1494"
      inkscape:window-x="-11"
@@ -37,6 +37,12 @@
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
+    <rect
+       x="382.65764"
+       y="169"
+       width="185.84101"
+       height="164.49864"
+       id="rect2" />
     <rect
        x="191.5"
        y="170.69721"
@@ -101,51 +107,61 @@
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text6"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect6);fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect6);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
        x="94.810493"
        y="0"><tspan
-         x="46.923871"
+         x="20.710351"
          y="33.439273"
-         id="tspan1">Office</tspan></text>
+         id="tspan1">Bedroom</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text7"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect7);fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect7);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
        x="94.11972"
        y="0"><tspan
-         x="231.56157"
+         x="235.85453"
          y="31.560367"
-         id="tspan2">Living</tspan></text>
+         id="tspan3">Office</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text1"
-       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);fill:#000000;stroke:#000000;stroke-width:3"
+       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#000000;stroke:#000000;stroke-width:3"
        x="93.499329"
        y="0"><tspan
-         x="409.29205"
+         x="420.94048"
          y="31.560367"
-         id="tspan3">Outside</tspan></text>
+         id="tspan4">Living</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text3"
-       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);fill:#000000;stroke:#000000;stroke-width:3"
+       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#000000;stroke:#000000;stroke-width:3"
        x="94.810493"
        y="0"><tspan
          x="16.727282"
          y="199.24982"
-         id="tspan4">Basement</tspan></text>
+         id="tspan5">Basement</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text4"
-       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect8);fill:#000000;stroke:#000000;stroke-width:3"
+       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect8);display:inline;fill:#000000;stroke:#000000;stroke-width:3"
        x="94.999992"
        y="0"><tspan
-         x="203.8308"
+         x="220.79302"
          y="202.25763"
-         id="tspan5">Commute</tspan></text>
+         id="tspan6">Outside</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2"
+       style="font-size:37.3333px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);fill:#000000;stroke:#000000;stroke-width:3"
+       x="92.920502"
+       y="0"><tspan
+         x="392.90892"
+         y="200.56037"
+         id="tspan7">Commute</tspan></text>
   </g>
 </svg>
