@@ -242,6 +242,9 @@ function loadContent(floor, entity_id) {
                             case "light":
                                 clickableIcon.innerHTML = lightOnIcon;
                                 break;
+                            case "fan":
+                                clickableIcon.innerHTML = fanIcon;
+                                break;
                             case "switch":
                                 if (floorEntities[i].length < 4) {
                                     clickableIcon.innerHTML = stdOnSwitchIcon;
@@ -283,6 +286,9 @@ function loadContent(floor, entity_id) {
                         switch (newEntity[0]["entity_id"].split(".")[0]) {
                             case "light":
                                 clickableIcon.innerHTML = lightOffIcon;
+                                break;
+                            case "fan":
+                                clickableIcon.innerHTML = fanIcon;
                                 break;
                             case "switch":
                                 if (floorEntities[i].length < 4) {
