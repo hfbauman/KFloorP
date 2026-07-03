@@ -29,6 +29,7 @@ var fridgeOnIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='4
 var fridgeOffIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'><path fill='black' d='M22.11 21.46L2.39 1.73L1.11 3L5 6.89V19a2 2 0 0 0 2 2v1h2v-1h6v1h2v-1c.58 0 1.1-.25 1.46-.65l2.38 2.38l1.27-1.27M17 19H7v-8h2.11L17 18.89V19M7.2 4L5.7 2.5c.35-.31.8-.5 1.3-.5h10a2 2 0 0 1 2 2v11.8l-2-2V11h-2.8l-2-2H17V4H7.2m.8 8h2v3H8v-3Z'/></svg>";
 var waterFountainOnIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'><path fill='black' d='M18.32 8H5.67l-.44-4h13.54M12 19a3 3 0 0 1-3-3c0-2 3-5.4 3-5.4s3 3.4 3 5.4a3 3 0 0 1-3 3M3 2l2 18.23c.13 1 .97 1.77 2 1.77h10c1 0 1.87-.77 2-1.77L21 2H3Z'/></svg>";
 var waterFountainOffIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'><path fill='black' d='M1 4.27L2.28 3L21 21.72L19.73 23l-1.46-1.46c-.34.29-.77.46-1.27.46H7a2.02 2.02 0 0 1-2-1.77L3.53 6.8L1 4.27M18.32 8l.45-4H5.82l-2-2H21l-1.71 15.47L9.82 8h8.5Z'/></svg>";
+var fanIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'><path fill='black' d='M12,11A1,1 0 0,0 11,12A1,1 0 0,0 12,13A1,1 0 0,0 13,12A1,1 0 0,0 12,11M12.5,2C17,2 17.11,5.57 14.75,6.75C13.76,7.24 13.32,8.29 13.13,9.22C13.61,9.42 14.03,9.73 14.35,10.13C18.05,8.13 22.03,8.92 22.03,12.5C22.03,17 18.46,17.1 17.28,14.73C16.78,13.74 15.72,13.3 14.79,13.11C14.59,13.59 14.28,14 13.88,14.34C15.87,18.03 15.08,22 11.5,22C7,22 6.91,18.42 9.27,17.24C10.25,16.75 10.69,15.71 10.89,14.79C10.4,14.59 9.97,14.27 9.65,13.87C5.96,15.85 2,15.07 2,11.5C2,7 5.56,6.89 6.74,9.26C7.24,10.25 8.29,10.68 9.22,10.87C9.41,10.39 9.73,9.97 10.14,9.65C8.15,5.96 8.94,2 12.5,2Z'/></svg>";
 var googleAssistantIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'><path fill='black' d='M7 2a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6m14.5 4A1.5 1.5 0 0 0 20 7.5A1.5 1.5 0 0 0 21.5 9A1.5 1.5 0 0 0 23 7.5A1.5 1.5 0 0 0 21.5 6M17 8a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 7a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 17 22a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 17 15Z'/></svg>";
 var googleAssistantIconGrey = "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'><path fill='gray' d='M7 2a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6m14.5 4A1.5 1.5 0 0 0 20 7.5A1.5 1.5 0 0 0 21.5 9A1.5 1.5 0 0 0 23 7.5A1.5 1.5 0 0 0 21.5 6M17 8a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 7a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 17 22a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 17 15Z'/></svg>";
 var temperatureIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><path fill='black' d='M15 13V5a3 3 0 0 0-6 0v8a5 5 0 1 0 6 0m-3-9a1 1 0 0 1 1 1v3h-2V5a1 1 0 0 1 1-1Z'/></svg>";
@@ -232,6 +233,7 @@ function loadContent(floor, entity_id) {
         switch (newEntity[0]["entity_id"].split(".")[0]) {
             case "light":
             case "switch":
+            case "fan":
                 var clickableIcon = document.createElement("a");
                 switch (newEntity[0]["state"]) {
                     case "on":
@@ -265,6 +267,9 @@ function loadContent(floor, entity_id) {
                                             break;
                                         case "waterfountain":
                                             clickableIcon.innerHTML = waterFountainOnIcon;
+                                            break;
+                                        case "fan":
+                                            clickableIcon.innerHTML = fanIcon;
                                             break;
                                     }
                                 }
@@ -304,6 +309,9 @@ function loadContent(floor, entity_id) {
                                             break;
                                         case "waterfountain":
                                             clickableIcon.innerHTML = waterFountainOffIcon;
+                                            break;
+                                        case "fan":
+                                            clickableIcon.innerHTML = fanIcon;
                                             break;
                                     }
                                 }

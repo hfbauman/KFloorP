@@ -16,10 +16,12 @@ var floorplan2ndFloor = "./images/floorplan.png"; // your floorplan image path f
 // All lines should end with a comma "," EXCEPT FOR THE LAST ONE. IF you have only one item, then it does not have to end with a comma.
 //
 // Types will define the icons and can be specified for the following DOMAINS: SWITCH, BINARY_SENSOR, SENSOR, MEDIA_PLAYER and WEATHER
+// FAN is also supported as a toggleable domain and uses a placeholder icon in main.js
 // 
 // CURRENTLY SUPPORTED ICONS PER DOMAIN:
 //
 // SWITCH: washingmachine, microwave, smartplug, dishwasher, heater, fridge, waterfountain
+// FAN: custom placeholder icon
 // BINARY_SENSOR: window, door
 // SENSOR: battery, temperature, humidity
 // MEDIA_PLAYER: tv, alexa, googleassistant
