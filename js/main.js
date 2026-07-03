@@ -394,7 +394,7 @@ function loadContent(floor, entity_id) {
                         break;
                     }
 
-                    var commuteHome = getEntityState(commuteData, "sensor.hannah_commute_home");
+                    var commuteHome = getEntityState(commuteData, "sensor.hannah_commute_home_rounded");
                     var commuteEta = getEntityState(commuteData, "sensor.hannah_commute_eta");
                     var commuteHomeState = commuteHome == null ? "-" : commuteHome["state"];
                     var commuteEtaState = commuteEta == null ? "-" : commuteEta["state"];
